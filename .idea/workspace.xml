@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4769603-acee-422a-b0d0-488bcb87c39f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HomeworkRefl.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="d4769603-acee-422a-b0d0-488bcb87c39f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +113,14 @@
       <option name="presentableId" value="Default" />
       <updated>1583667120295</updated>
     </task>
+    <task id="LOCAL-00001" summary="setting maven">
+      <created>1583674784715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583674784715</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,5 +135,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="setting maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting maven" />
   </component>
 </project>

@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4769603-acee-422a-b0d0-488bcb87c39f" name="Default Changelist" comment="" />
+    <list default="true" id="d4769603-acee-422a-b0d0-488bcb87c39f" name="Default Changelist" comment="setting maven">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cbb1d0324fc13a9e4eadd4062030365df80537f7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d412006e40ef8cb000350c3269df3e0e92dc7191" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Bulygin/homework/service/SearchSuggestDeprecatedServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Cow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Crowl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Crowl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Dodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Dodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/IAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/IAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Iguadon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Iguadon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Lizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Lizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Reptile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Reptile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/classes/Triceratops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/entity/Triceratops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/service/SearchSuggestDeprecatedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bulygin/homework/service/SearchSuggestDeprecatedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Bird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Cow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Crowl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Dodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/IAnimals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Iguadon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Lizard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Reptile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Bulygin/homework/classes/Triceratops.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +42,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -21,11 +51,27 @@
   </component>
   <component name="ProjectId" id="1YqPOkUJdjnXTeor2LFMW1Qm6dL" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.Bulygin.homework.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -40,16 +86,20 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.Bulygin.homework.Main" />
       <module name="HomeworkRefl" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.Bulygin.homework.Main" />
+    <configuration name="findDepricatedTest" type="JUnit" factoryName="JUnit">
       <module name="HomeworkRefl" />
+      <option name="PACKAGE_NAME" value="com.Bulygin.homework.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Bulygin.homework.service.SearchSuggestDeprecatedServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

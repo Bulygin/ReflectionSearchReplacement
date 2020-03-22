@@ -1,4 +1,4 @@
-package com.Bulygin.homework.classes;
+package com.Bulygin.homework.entity;
 
 @Deprecated
 public class Triceratops extends Reptile {

@@ -2,19 +2,27 @@ package com.Bulygin.homework.service;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Set;
 import org.reflections.Reflections;
 
-public class SearchSuggestDeprecatedService {
+class SearchSuggestDeprecatedService {
 
-  public static ArrayList<Object> findDeprecated(ArrayList<Object> animals) {
+  /**
+   * If animal in animals is created from deprecated class, the method finds an interface or super
+   * class for it . If interface or super class exists, the method finds non-deprecated
+   * implementations or subclasses and print these classes as suggestions to use instead of the
+   * deprecated class.
+   *
+   * @param objects can contain deprecated and non- deprecated objects.
+   * @return deprecated animals list.
+   */
+  static ArrayList<Object> printAlternateForDeprecated(ArrayList<Object> objects) {
     ArrayList<Object> result = new ArrayList<Object>();
-    for (Object i : animals) {
-      Class myClass = i.getClass();
+    for (Object object : objects) {
+      Class myClass = object.getClass();
       Annotation deprecatedAnnotation = myClass.getAnnotation(Deprecated.class);
       if (deprecatedAnnotation != null) {
-        result.add(i);
+        result.add(object);
         if (!SearchSuggestDeprecatedService.getAlternatedInSuper(myClass)) {
           SearchSuggestDeprecatedService.getAlternatedInInterfaces(myClass);
         }
@@ -23,48 +31,39 @@ public class SearchSuggestDeprecatedService {
     return result;
   }
 
-  public static boolean getAlternatedInSuper(Class myClass) {
+  private static boolean getAlternatedInSuper(Class myClass) {
     boolean result = false;
     Class usedSuper = myClass.getSuperclass();
     if (usedSuper != null) {
-      Reflections reflections = new Reflections("com.Bulygin.homework");
-      Set subTypesOf = reflections.getSubTypesOf(usedSuper);
-      Iterator<Class> iterator = subTypesOf.iterator();
-      while (iterator.hasNext()) {
-        Class adviceClass = iterator.next();
-        Annotation deprecatedAnnotation = adviceClass.getAnnotation(Deprecated.class);
-        if (deprecatedAnnotation == null) {
-          result = true;
-          System.out.println(
-              myClass.getName() + "is Deprecated, you can use class " + adviceClass.getName()
-                  + " instead");
-        }
-      }
+      result = printAlternated(myClass, usedSuper);
     }
     return result;
   }
 
-  public static boolean getAlternatedInInterfaces(Class myClass) {
+  private static boolean getAlternatedInInterfaces(Class myClass) {
     boolean result = false;
     Class[] usedInterfaces = myClass.getInterfaces();
     if (usedInterfaces != null) {
       for (Class interFace : usedInterfaces) {
-        Reflections reflections = new Reflections("com.Bulygin.homework");
-        Set subTypesOf = reflections.getSubTypesOf(interFace);
-        Iterator<Class> iterator = subTypesOf.iterator();
-        while (iterator.hasNext()) {
-          Class adviceClass = iterator.next();
-          Annotation deprecatedAnnotation = adviceClass.getAnnotation(Deprecated.class);
-          if (deprecatedAnnotation == null) {
-            result = true;
-            System.out.println(
-                myClass.getName() + " is Deprecated, you can use class " + adviceClass.getName()
-                    + " instead");
-          }
-        }
+        result = printAlternated(myClass, interFace);
       }
     }
     return result;
   }
 
+  private static boolean printAlternated(Class oldClass, Class alternatedClass) {
+    boolean result = false;
+    Reflections reflections = new Reflections("com.Bulygin.homework");
+    Set subTypesOf = reflections.getSubTypesOf(alternatedClass);
+    for (Class adviceClass : (Iterable<Class>) subTypesOf) {
+      Annotation deprecatedAnnotation = adviceClass.getAnnotation(Deprecated.class);
+      if (deprecatedAnnotation == null) {
+        result = true;
+        System.out.println(
+            oldClass.getName() + " is Deprecated, you can use class " + adviceClass.getName()
+                + " instead");
+      }
+    }
+    return result;
+  }
 }
